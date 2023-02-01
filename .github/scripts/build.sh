@@ -7,6 +7,6 @@ set -eo pipefail
 
 xcodebuild -workspace Mastodon.xcworkspace \
 	-scheme Mastodon \
- 	-destination "platform:iOS Simulator, id:B25A0228-F51A-40C2-8C14-91C624D7C837, OS:16.0, name:iPhone 14" \
+ 	-destination "platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device" \
 	clean \
 	build | xcpretty
